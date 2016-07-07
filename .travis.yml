@@ -1,6 +1,17 @@
-sudo: false
+  sudo: false
 language: node_js
 node_js:
-  - '5'
-  - '4'
-  - '0.12'
+- 4.4.2
+before_script:
+- npm install -g gulp
+- npm install
+- npm install -g firebase-tools
+- gulp
+script:
+- echo 'Hello Firebase'
+after_success:
+- firebase deploy --token "$FIREBASE_TOKEN" --project default
+env:
+  global:
+  - secure: jHwOaksoH6uF+fbb25tOSWxMReR1d+LZTmLGkE1Oh357MTJ5QgG9kAWgjW9AP3u9nGYY8krnB9SSq57kiWfQuG0S+iRcry1Q4Ty2S/5cZdmjWrODs/3dRhU5Ht0CmtGAhpWIdePJCJ7DDaBkuf39oDpqu2PTObmH/fz8q3TmrA8g25wDqLgTzVCvKNIX9j40Tow5okz1kXpt1hc31B8TRlIRzsK/Oko+mtDDCNGSw9RRmvP1ARinRg7tJavLGjJqUxlsmJRtlNbhdHKZjBuTRMttc2MnECGvs9bd0xM5rCAQWb5PkrTwvGyEt/Nbe8Ah+4FdiWYAcOnhz9rG+13+xSmqS92iOR8/Gm9OS8ytYzq2m+d9NQnGeC/0wAIK4QRDWAeMoMuEJCVr3lCSgdWB0I26TeV6Ogk0ati6fpvK6TWuaXiPRluGuU4R3HyKhnJ22YUTe94E8mFboaS3LWVUEqRz7uK5NwJET+NLZlV5s6SUhysMiDCvHtBpLpiyiyIaTAXs82OY5dydugHNDw1EKqZaSvAW86+uvn8/XZGZfIua9aYHdGbgObotkXzt1jgDAnStX6HTDUOpCAp6sAdrfA2H68k1++LsbN7+YbaTJz4XC5nUsiDpHevytv0e3318mADffMuuFhhQhiiKG63Zu5Xry6MbQgmhWEH+i1B+In0=
+  - secure: aB7zA+myJDVigJfsNjoEic7tJ6xTlSYTNi7PKWwDTca6pgQQzYOZ0tK4kJkvcBEnvkPCyGlPlxuWRHofgwt4YavCEQKvwHh7f+r1/FEzJ8W79AaTZQ1uvxLW1lhnQQ2eiEitH0PPN/Whd8KdQv2zHsUbwl9ZZwpiphiKnzFMXGCyX+S/0f8p7/gQFeqbNTqceb4YvRGTm180UTo0QzylXKvcSeDttjzkRN7xpm+UL47ILqObfV048t6rDUFM256nY+MY8J1nX92x9b+vWofxLVUxl2phZE8L0uJF6bepYKInAgvoSio4wf3AcwS7zc6JOy3RDHS6zuKjac2f/N51NyVpiGUk9hwVvS1/1WELgkLqp8yOySGyK4FOYzEN8eUaeQMINTBCbE/qzn4ivjtJCo6wMK+v1hYEocg/QD53NKduyup5AmUi0uL7QvPh4KkuWaBO+aQ08zllAMergTmFl+swVVLWCTxfJkYv4HTdC2hSrQA8Nmti27P4qy9UGRXEcCHXi5s4knpDfaTXrXz+K+IFNpcni44+aM61n/e40uS0G6WPiFLWSKhc9cb5OqgC3n2/2AWnyb1/YBv3tp6s/XMjQbI2I9zbbHLYnZ562CREpFFGJ+CJ1NLz2G0OORM9t/nRW9MUmgL2PHSumhCTR1VXiEjf6hztZl2WJDMqoBY=
