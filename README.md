@@ -42,4 +42,4 @@ At present, we officially aim to support the last two versions of the following 
 Apache 2.0  
 Copyright 2015 Google Inc
 
-Copyright 2015 Damian McNulty
+Copyright 2016 Damian McNulty
