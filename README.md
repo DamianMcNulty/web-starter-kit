@@ -1,4 +1,5 @@
 [![Stories in Ready](https://badge.waffle.io/DamianMcNulty/web-starter-kit.png?label=ready&title=Ready)](https://waffle.io/DamianMcNulty/web-starter-kit)
+[![Build Status](https://travis-ci.org/DamianMcNulty/web-starter-kit.svg?branch=master)](https://travis-ci.org/DamianMcNulty/web-starter-kit)
 # [![Web Starter Kit](https://cloud.githubusercontent.com/assets/110953/11445049/f05512ba-9520-11e5-8fdb-8c8eb5f690d0.jpg)](https://github.com/google/web-starter-kit/releases/latest)
 
 ## Overview
