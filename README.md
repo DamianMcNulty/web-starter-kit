@@ -5,7 +5,7 @@
 ## Overview
 
 [Web Starter Kit](https://developers.google.com/web/tools/starter-kit/) 
-Following the best practices outlined in Google's [Web Fundamentals](https://developers.google.com/web/fundamentals/).
+Following best practices outlined in Google's [Web Fundamentals](https://developers.google.com/web/fundamentals/).
 
 ### Features
 
