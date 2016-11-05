@@ -72,6 +72,8 @@
       console.error('Error during service worker registration:', e);
     });
   }
+  var timeNow = new Date().toLocaleTimeString();
+  document.getElementById('testTime').innerHTML = timeNow;
 
   // Your custom JavaScript goes here
 })();
